@@ -1,0 +1,281 @@
+/*-------ABRO---------TIPOGRAFIA--------------------*/
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+p {
+    font-size: 14px;
+}
+li {
+    font-size: 16px;
+}
+/*-------CIERRO---------TIPOGRAFIA--------------------*/
+/* ------------------------Tabla------------------ */
+
+td {
+    border: 1px solid black;
+    background-color: azure;
+}
+
+
+.caja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 30px;
+}
+#contenidoPrincipal {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#contenidoPrincipal p {
+    color: black;
+}
+.tabla {
+    border: 3px solid black;
+    background-color: coral;
+}
+.cajaborde {
+    background-color: lightgreen;
+}
+
+/*-------ABRO---------NAVBAR RESPONSIVE--------------------*/
+.header {
+display: flex;
+justify-content: space-between;
+position: sticky;
+top: 10px;
+z-index: 1;
+}
+.separacion {
+padding: 0px 20px 0px 20px;
+}
+.enlaceBlanco {
+color: white;
+text-decoration: none;
+}
+.enlaceBlanco:hover {
+    color:lightgreen;
+    text-decoration: none;
+}
+#topbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.menu {
+    display: flex;
+    background-color: black;
+    margin: 20px 0 20px 0;
+    padding: 30px;
+    width: 500px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 5px 5px 10px black;   
+}
+#burgerMenu {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    width: 120px;
+    background-color: black;
+    box-shadow: 10px 5px 10px black;
+}
+#burgerMenu button{
+    color: white;
+    font-size: 20px;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+}
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    background-color: black;
+    margin: 20px 0 20px 0;
+    padding: 21px 0 21px 0;
+    width: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+  }
+  .dropdown span{
+      font-size: 30px;
+      padding-right: 20px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: black;
+    padding: 20px;
+    width: 200px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  @media (max-width: 700px) {
+    .menu {
+display: none;
+    }
+    #burgerMenu {
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+}
+
+@media (min-width: 700px) {
+    .dropdown{
+        display: none;
+    }
+}
+/*-------CIERRO---------NAVBAR RESPONSIVE--------------------*/
+
+/*--------ABRO--------EFECTO------------*/
+
+#efectoCirculo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation-name: circuito;
+    animation-duration: 2s;
+    margin-bottom: 300px;
+    animation-iteration-count:infinite;
+    margin-left: 20%;
+  }
+  
+  @keyframes circuito {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:60%; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:100px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+#efectoCirculo:hover {
+    border: 4px solid black;
+}
+/*--------CIERRO--------EFECTO------------*/
+
+
+/*--------ABRO--------Articulos (FlexBox)------------*/
+
+.articleFlex {
+    border: 3px solid lightgreen;
+    box-shadow: 0 10px 10px 0 black;
+}
+
+.headArticleFlex {
+    display: flex;
+    justify-content: center;
+    padding: 0 5% 0 5%;
+    text-align: center;
+    background-color: black;
+    color:lightgreen;
+    border-bottom: 2px solid lightgreen;
+}
+
+.bodyArticleFlex {
+    display: flex;
+    padding: 1% 5% 1% 5%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.bodyArticleFlex img {
+    max-width: 300px;
+    padding-right: 10px;
+}
+
+.bodyArticleFlex img:hover {
+    opacity: 0.5;
+}
+
+.bodyArticleFlex a {
+    color: orange;
+    text-decoration: none;
+}
+
+.bodyArticleFlex a:hover {
+    color: red;
+}
+
+.footArticleFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    background-color: black;
+    border-top: 2px solid lightgreen;
+}
+
+.footArticleFlex a {
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.footArticleFlex a:hover {
+    color: red;
+}
+
+.footArticleFlex img {
+    max-width: 30px;
+    padding-left: 10px;
+}
+
+.footArticleFlex img:hover {
+    max-width: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .bodyArticleFlex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.articleSeparacion {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*-------CIERRO--------- Articulos (FlexBox)------------*/
+
+
+
+/*-------ABRO---------FOOTER--------------------*/
+.footer {
+    border-top: 2px solid lightgreen;
+}
+.separacionFooter {
+    padding-top: 20px ;
+    padding-bottom: 20px;
+}
+.black {
+background-color: black;
+box-shadow: 5px 5px 10px black;
+}
+.green {
+    color: lightgreen;
+}
+
+/*--------CIERRO---------FOOTER--------------------*/

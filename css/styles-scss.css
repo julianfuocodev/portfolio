@@ -1,0 +1,43 @@
+.carta__header {
+  padding: 30px 0px 30px 40px;
+  border: 1px lightgreen solid;
+  background-color: black;
+  color: lightgreen;
+  font-size: 24px; }
+
+.carta__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.carta__parrafo {
+  display: grid; }
+
+.carta__texto {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding-left: 30px;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.carta__img {
+  width: 400px;
+  padding-left: 80px; }
+
+.carta__check {
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 45px;
+  height: 45px; }
+
+.carta__titulo {
+  font-size: 18px; }
+
+@media (max-width: 700px) {
+  .carta__container {
+    display: grid;
+    grid-template-columns: 100%; } }
